@@ -1,0 +1,8 @@
+<h1>This is a comprehensive list of all songs that exist*. </h1>
+
+<ul>
+    <% @songs.each do |s| %>
+     <li> <%= link_to("#{s.artist_name} - #{s.title}", song_path(s)) %> </li>
+    <% end %>
+</ul>
+<p>*in this table as defined by this model</p>

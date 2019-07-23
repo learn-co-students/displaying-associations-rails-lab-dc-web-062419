@@ -1,0 +1,8 @@
+<h1>This is a comprehensive list of all artists that exist*. </h1>
+
+<ul>
+    <% @artists.each do |a| %>
+     <li> <%= link_to(a.name, artist_path(a)) + " #{a.say_song_count} songs" %> </li>
+    <% end %>
+</ul>
+<p>*in this table as defined by this model</p>
